@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nguyễn Minh Anh | Personal Portfolio</title>
+  <meta name="description" content="Portfolio cá nhân của Nguyễn Minh Anh - Học sinh lớp 12A3 trường THPT Hòn Gai. Khám phá câu chuyện, sở thích và góc nhỏ của mình." />
+  
+  <!-- Google Fonts: Quicksand (trẻ trung, mềm mại) & Plus Jakarta Sans (hiện đại, dễ đọc) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================= THANH ĐIỀU HƯỚNG CỐ ĐỊNH ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">Minh Anh<span>.</span></a>
+      
+      <nav class="nav-links" id="nav-links">
+        <a href="#hero">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#music">Âm nhạc</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Nút chuyển đổi Dark / Light Mode -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Chuyển đổi giao diện sáng tối" title="Đổi giao diện">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+        
+        <!-- Nút mở menu trên điện thoại -->
+        <button id="mobile-menu-btn" class="mobile-btn" aria-label="Mở menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= 1. HERO SECTION ================= -->
+    <section id="hero" class="hero-section">
+      <!-- Các khối trang trí nền có hiệu ứng Parallax -->
+      <div class="parallax-shape shape-1" data-speed="0.04"></div>
+      <div class="parallax-shape shape-2" data-speed="-0.03"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content fade-in">
+          <span class="badge">✨ Xin chào, mình là</span>
+          <h1 class="hero-title">Nguyễn Minh Anh</h1>
+          <p class="hero-bio">
+            “A mind full of thoughts,<br />
+            a heart full of little dreams.”
+          </p>
+          <div class="hero-cta">
+            <a href="#about" class="btn btn-primary">Khám phá về mình</a>
+            <a href="#contact" class="btn btn-outline">Kết nối ngay</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper fade-in">
+          <div class="avatar-frame parallax-target" data-speed="0.02">
+            <!-- Thay đường dẫn ảnh thật của bạn vào thuộc tính src bên dưới -->
+            <img 
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" 
+              alt="Ảnh đại diện của Nguyễn Minh Anh" 
+              class="hero-avatar"
+            />
+          </div>
+          <div class="floating-tag tag-school">🏫 THPT Hòn Gai</div>
+          <div class="floating-tag tag-class">🎓 Lớp 12A3</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. GIỚI THIỆU BẢN THÂN ================= -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-subtitle">Về bản thân</span>
+          <h2 class="section-title">Câu chuyện & Sở thích</h2>
+        </div>
+
+        <!-- Thông tin học vấn -->
+        <div class="info-banner card fade-in">
+          <div class="info-item">
+            <span class="info-icon">🏫</span>
+            <div>
+              <small>Trường học</small>
+              <h3>THPT Hòn Gai</h3>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="info-item">
+            <span class="info-icon">📚</span>
+            <div>
+              <small>Lớp</small>
+              <h3>12A3</h3>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="info-item">
+            <span class="info-icon">🌱</span>
+            <div>
+              <small>Định hướng</small>
+              <h3>Học hỏi & Sáng tạo</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid 3 thẻ sở thích -->
+        <div class="hobbies-grid">
+          <!-- Sở thích 1: Xem phim -->
+          <article class="card hobby-card fade-in">
+            <div class="card-icon">🎬</div>
+            <h3>Xem phim</h3>
+            <p>Thế giới điện ảnh giúp mình mở rộng góc nhìn và thư giãn sau giờ học căng thẳng.</p>
+            <div class="tags-list">
+              <span class="tag">Tâm lí tội phạm</span>
+              <span class="tag">Viễn tưởng</span>
+              <span class="tag">Tài liệu</span>
+              <span class="tag">Tình cảm</span>
+            </div>
+          </article>
+
+          <!-- Sở thích 2: Ăn uống -->
+          <article class="card hobby-card fade-in">
+            <div class="card-icon">🍜</div>
+            <h3>Ẩm thực Việt Nam</h3>
+            <p>Mình là một người yêu ẩm thực truyền thống, luôn hào hứng khám phá hương vị đặc trưng của các món ăn Việt Nam.</p>
+            <div class="tags-list">
+              <span class="tag">Món ăn Việt Nam</span>
+              <span class="tag">Khám phá quán ngon</span>
+            </div>
+          </article>
+
+          <!-- Sở thích 3: Nuôi chó -->
+          <article class="card hobby-card fade-in">
+            <div class="card-icon">🐶</div>
+            <h3>Nuôi chó</h3>
+            <p>Những người bạn bốn chân luôn mang lại nguồn năng lượng tích cực, sự ấm áp và niềm vui mỗi ngày.</p>
+            <div class="tags-list">
+              <span class="tag">Yêu động vật</span>
+              <span class="tag">Chăm sóc thú cưng</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. BÀI HÁT YÊU THÍCH ================= -->
+    <section id="music" class="section bg-soft">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-subtitle">Góc giai điệu</span>
+          <h2 class="section-title">Bài hát yêu thích</h2>
+        </div>
+
+        <div class="music-card card fade-in">
+          <div class="music-disc-wrapper">
+            <div class="music-disc" id="vinyl-disc">
+              <div class="disc-center"></div>
+            </div>
+          </div>
+          
+          <div class="music-info">
+            <span class="music-badge">Now Playing • On Repeat</span>
+            <h3 class="song-title">double take</h3>
+            <p class="song-artist">dhruv</p>
+            <p class="song-desc">
+              Một giai điệu nhẹ nhàng, sâu lắng giúp mình tìm thấy sự bình yên mỗi khi học bài hoặc suy ngẫm về những ước mơ nhỏ.
+            </p>
+            
+            <!-- Trình phát nhạc mô phỏng tương tác -->
+            <div class="player-controls">
+              <button id="play-btn" class="btn btn-primary btn-sm">▶ Nghe thử giai điệu</button>
+              <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FORM LIÊN HỆ ================= -->
+    <section id="contact" class="section">
+      <div class="container contact-container">
+        <div class="section-header fade-in">
+          <span class="section-subtitle">Kết nối</span>
+          <h2 class="section-title">Gửi lời nhắn cho mình</h2>
+          <p class="section-desc">Bạn muốn trao đổi về bài học, phim ảnh hay đơn giản là gửi một lời chào? Hãy để lại tin nhắn nhé!</p>
+        </div>
+
+        <form id="contact-form" class="card contact-form fade-in">
+          <div class="form-group">
+            <label for="name">Tên của bạn</label>
+            <input type="text" id="name" name="name" placeholder="Nhập tên của bạn..." required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email hoặc Liên hệ</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Lời nhắn</label>
+            <textarea id="message" name="message" rows="4" placeholder="Viết lời nhắn của bạn ở đây..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Gửi lời nhắn ✨</button>
+          
+          <!-- Thông báo cảm ơn sau khi submit -->
+          <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= 4. CUỐI TRANG & QUOTE TRUYỀN CẢM HỨNG ================= -->
+  <footer class="footer">
+    <div class="container footer-container fade-in">
+      <div class="quote-box">
+        <span class="quote-mark">“</span>
+        <p class="closing-quote">
+          And that's a little piece of me.<br /><br />
+          Thank you for stopping by and getting to know my little world.<br /><br />
+          Hope you find something beautiful in every ordinary day. ♡
+        </p>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2026 <strong>Nguyễn Minh Anh</strong> — Lớp 12A3, THPT Hòn Gai.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
